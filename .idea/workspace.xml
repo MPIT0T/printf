@@ -10,15 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74130e99-05f7-417d-8b85-dae08c8d52be" name="Changes" comment="push">
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ft_putchar.c" beforeDir="false" afterPath="$PROJECT_DIR$/ft_putchar.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_printf.h" beforeDir="false" afterPath="$PROJECT_DIR$/ft_printf.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ft_putmem.c" beforeDir="false" afterPath="$PROJECT_DIR$/ft_putmem.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ft_putnbr.c" beforeDir="false" afterPath="$PROJECT_DIR$/ft_putnbr.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ft_putnbr_u.c" beforeDir="false" afterPath="$PROJECT_DIR$/ft_putnbr_u.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ft_putnbr_x.c" beforeDir="false" afterPath="$PROJECT_DIR$/ft_putnbr_x.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ft_putstr.c" beforeDir="false" afterPath="$PROJECT_DIR$/ft_putstr.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/printf.c" beforeDir="false" afterPath="$PROJECT_DIR$/printf.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/printf.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/printf_utils.c" beforeDir="false" afterPath="$PROJECT_DIR$/printf_utils.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/printftester/p_test" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +70,7 @@
       <option name="presentableId" value="Default" />
       <updated>1702486361601</updated>
       <workItem from="1702486362650" duration="808000" />
-      <workItem from="1702983551003" duration="1012000" />
+      <workItem from="1702983551003" duration="2729000" />
     </task>
     <task id="LOCAL-00001" summary="push">
       <option name="closed" value="true" />

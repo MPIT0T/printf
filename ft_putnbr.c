@@ -6,7 +6,7 @@
 /*   By: mpitot <mpitot@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/15 11:58:58 by mpitot            #+#    #+#             */
-/*   Updated: 2023/12/18 21:26:25 by mpitot           ###   ########.fr       */
+/*   Updated: 2023/12/19 12:14:27 by mpitot           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,4 @@ int		ft_putnbr(int n)
 		return (ft_putchar('-') + ft_putnbr_u(n * -1));
 	return (ft_putnbr_u(n));
 }
+

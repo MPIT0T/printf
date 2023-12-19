@@ -6,7 +6,7 @@
 /*   By: mpitot <mpitot@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/01 15:12:12 by mpitot            #+#    #+#             */
-/*   Updated: 2023/12/18 15:55:41 by mpitot           ###   ########.fr       */
+/*   Updated: 2023/12/19 12:14:27 by mpitot           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,15 +19,15 @@ static int	ft_convert(char c, va_list args)
 	else if (c == 'd' || c == 'i')
 		return (ft_putnbr(va_arg(args, int)));
 	else if (c == 'u')
-		return (ft_putnbr_u(va_arg(args, unsigned int)));
+		return (ft_putnbr_base(va_arg(args, unsigned int), ));
 	else if (c == 's')
 		return (ft_putstr(va_arg(args, char *)));
 	else if (c == 'c')
 		return (ft_putchar(va_arg(args, int)));
 	else if (c == 'x')
-		return (ft_putnbr_x(va_arg(args, int), 0));
+		return (ft_putnbr_x(va_arg(args, int), "0123456789abcdef"));
 	else if (c == 'X')
-		return (ft_putnbr_x(va_arg(args, int), 1));
+		return (ft_putnbr_x(va_arg(args, int), "0123456789ABCDEF"));
 	else if (c == 'p')
 		return (ft_putmem(va_arg(args, void *)));
 	else
