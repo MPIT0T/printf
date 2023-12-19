@@ -6,7 +6,7 @@
 /*   By: mpitot <mpitot@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/15 11:58:58 by mpitot            #+#    #+#             */
-/*   Updated: 2023/12/19 12:14:27 by mpitot           ###   ########.fr       */
+/*   Updated: 2023/12/19 13:48:43 by mpitot           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,28 @@
 
 int		ft_putnbr(int n)
 {
+	int		x;
+	int 	y;
+
+	if (n < 0)
+	{
+		x = ft_putchar('-');
+		if (x == -1)
+			return (-1);
+		y = ft_putnbr_u(n * -1);
+		if (y == -1)
+			return (-1);
+		return (x + y);
+	}
+	else
+		return (ft_putnbr_u(n));
+}
+
+/*
+int		ft_putnbr(int n)
+{
 	if (n < 0)
 		return (ft_putchar('-') + ft_putnbr_u(n * -1));
 	return (ft_putnbr_u(n));
 }
-
+*/

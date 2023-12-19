@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   printf.c                                           :+:      :+:    :+:   */
+/*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mpitot <mpitot@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/01 15:12:12 by mpitot            #+#    #+#             */
-/*   Updated: 2023/12/19 12:14:27 by mpitot           ###   ########.fr       */
+/*   Created: 2023/12/19 15:16:37 by mpitot            #+#    #+#             */
+/*   Updated: 2023/12/19 15:16:37 by mpitot           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ static int	ft_convert(char c, va_list args)
 	else if (c == 'p')
 		return (ft_putmem(va_arg(args, void *)));
 	else
-		return (ft_putchar('%') + ft_putchar(c));
+	return (ft_putchar('%') + ft_putchar(c));
 }
 
 int		ft_printf(const char *format, ...)
@@ -52,5 +52,5 @@ int		ft_printf(const char *format, ...)
 		i++;
 	}
 	return (res);
-	
+
 }

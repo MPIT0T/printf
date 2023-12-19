@@ -6,19 +6,31 @@
 /*   By: mpitot <mpitot@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/15 12:04:17 by mpitot            #+#    #+#             */
-/*   Updated: 2023/12/19 12:14:27 by mpitot           ###   ########.fr       */
+/*   Updated: 2023/12/19 13:48:43 by mpitot           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int		ft_putnbr_u(unsigned int n, int state)
+int		ft_putnbr_u(unsigned int n)
+{
+	int		x;
+	int 	y;
+
+	if (n < 10)
+		return (ft_putchar((int) n + 48));
+	x = ft_putnbr_u(n / 10);
+	if (x == -1)
+		return (-1);
+	y = ft_putchar(((int) (n % 10) + 48));
+	if (y == -1)
+		return (-1);
+	return (x + y);
+}
+/*
+int 	ft_putnbr_u(unsigned int n, int state)
 {
 	if (n < 10)
-	{
-		if (ft_putchar((int) n + 48)) == -1)
-			state = -1
-		return (1);
-	}
-	return (ft_putnbr_u(n / 10) + ft_putchar((((int) (n % 10) + 48))));
-}
+ 		return (ft_putchar(int) n + 48));
+	return (ft_putnbr_u(n / 10) + ft_putchar(((int) (n % 10) + 48)));
+}*/
