@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 int		ft_putnbr_x_u(unsigned int nbr, char *base)
 {

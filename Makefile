@@ -21,7 +21,7 @@ ft_putmem.c
 
 OBJS	=	${SRCS:.c=.o}
 
-HEADER	=	printf.h
+HEADER	=	ft_printf.h
 
 NAME	=	libftprintf.a
 
