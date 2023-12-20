@@ -14,23 +14,24 @@
 
 static int	ft_convert(char c, va_list args)
 {
+	if (!c)
+		return (-1);
 	if (c == '%')
 		return (ft_putchar('%'));
-	else if (c == 'd' || c == 'i')
+	if (c == 'd' || c == 'i')
 		return (ft_putnbr(va_arg(args, int)));
-	else if (c == 'u')
-		return (ft_putnbr_base(va_arg(args, unsigned int), ));
-	else if (c == 's')
+	if (c == 'u')
+		return (ft_putnbr_u(va_arg(args, unsigned int)));
+	if (c == 's')
 		return (ft_putstr(va_arg(args, char *)));
-	else if (c == 'c')
+	if (c == 'c')
 		return (ft_putchar(va_arg(args, int)));
-	else if (c == 'x')
+	if (c == 'x')
 		return (ft_putnbr_x(va_arg(args, int), "0123456789abcdef"));
-	else if (c == 'X')
+	if (c == 'X')
 		return (ft_putnbr_x(va_arg(args, int), "0123456789ABCDEF"));
-	else if (c == 'p')
+	if (c == 'p')
 		return (ft_putmem(va_arg(args, void *)));
-	else
 	return (ft_putchar('%') + ft_putchar(c));
 }
 
@@ -39,6 +40,7 @@ int		ft_printf(const char *format, ...)
 	va_list	args;
 	size_t	i;
 	int		res;
+	int		temp;
 
 	va_start(args, format);
 	i = 0;
@@ -46,11 +48,14 @@ int		ft_printf(const char *format, ...)
 	while (format[i])
 	{
 		if (format[i] == '%')
-			res += ft_convert(format[++i], args);
+			temp = ft_convert(format[++i], args);
 		else
-			res += ft_putchar(format[i]);
+			temp = ft_putchar(format[i]);
+		if (temp == -1)
+			return (-1);
+		res += temp;
 		i++;
 	}
+	va_end(args);
 	return (res);
-
 }

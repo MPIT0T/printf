@@ -6,16 +6,15 @@
 #    By: mpitot <mpitot@student.42lyon.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/15 17:42:43 by mpitot            #+#    #+#              #
-#    Updated: 2023/12/15 18:06:43 by mpitot           ###   ########.fr        #
+#    Updated: 2023/12/20 13:33:03 by mpitot           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRCS	=	printf.c	\
+SRCS	=	ft_printf.c	\
 ft_putchar.c	\
 ft_putnbr.c		\
 ft_putnbr_u.c	\
 ft_putstr.c		\
-printf_utils.c	\
 ft_putnbr_x.c	\
 ft_putmem.c
 

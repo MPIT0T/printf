@@ -30,12 +30,3 @@ int		ft_putnbr(int n)
 	else
 		return (ft_putnbr_u(n));
 }
-
-/*
-int		ft_putnbr(int n)
-{
-	if (n < 0)
-		return (ft_putchar('-') + ft_putnbr_u(n * -1));
-	return (ft_putnbr_u(n));
-}
-*/

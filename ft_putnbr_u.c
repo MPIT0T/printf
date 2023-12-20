@@ -27,10 +27,3 @@ int		ft_putnbr_u(unsigned int n)
 		return (-1);
 	return (x + y);
 }
-/*
-int 	ft_putnbr_u(unsigned int n, int state)
-{
-	if (n < 10)
- 		return (ft_putchar(int) n + 48));
-	return (ft_putnbr_u(n / 10) + ft_putchar(((int) (n % 10) + 48)));
-}*/
