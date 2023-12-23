@@ -6,7 +6,7 @@
 /*   By: mpitot <mpitot@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/19 15:16:37 by mpitot            #+#    #+#             */
-/*   Updated: 2023/12/19 15:16:37 by mpitot           ###   ########.fr       */
+/*   Updated: 2023/12/22 12:57:53 by mpitot           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,8 @@ int		ft_printf(const char *format, ...)
 	int		res;
 	int		temp;
 
+	if (!format || write(1, 0, 0) == -1)
+		return (-1);
 	va_start(args, format);
 	i = 0;
 	res = 0;
